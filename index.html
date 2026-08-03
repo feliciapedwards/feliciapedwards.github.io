@@ -3,106 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Felicia P. Edwards | Resume</title>
-    <style>
-      :root {
-        color-scheme: light;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-      body {
-        margin: 0;
-        background: #f5f7fb;
-        color: #1e293b;
-      }
-      main {
-        max-width: 860px;
-        margin: 2rem auto;
-        padding: 2rem;
-        background: #fff;
-        border-radius: 12px;
-        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
-      }
-      h1,
-      h2 {
-        margin-bottom: 0.5rem;
-      }
-      h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        margin-top: 2rem;
-        border-bottom: 2px solid #dbe4ff;
-        padding-bottom: 0.3rem;
-      }
-      p,
-      li {
-        line-height: 1.5;
-      }
-      ul {
-        padding-left: 1.2rem;
-      }
-      .meta {
-        color: #475569;
-        margin-top: 0;
-      }
-      .skills {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-        gap: 0.75rem;
-      }
-      .skills li {
-        list-style: none;
-        background: #eff6ff;
-        padding: 0.65rem 0.75rem;
-        border-radius: 8px;
-      }
-    </style>
+    <meta
+      name="description"
+      content="Portfolio website for Your Name - role, projects, skills, and contact information."
+    />
+    <title>Your Name | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main>
-      <header>
-        <h1>Felicia P. Edwards</h1>
-        <p class="meta">Software Engineer • feliciapedwards@example.com • github.com/feliciapedwards</p>
-      </header>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-      <section>
-        <h2>Professional Summary</h2>
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Primary navigation">
+        <!-- Customize name/logo text -->
+        <a class="brand" href="#top">Your Name</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <!-- Replace with your name and role/tagline -->
+          <p class="eyebrow">Available for opportunities</p>
+          <h1 id="hero-title">Your Name</h1>
+          <p class="tagline">Frontend Developer crafting accessible, modern web experiences.</p>
+          <p class="hero-text">
+            I design and build clean digital products with performance, usability, and thoughtful detail.
+          </p>
+          <div class="cta-group">
+            <!-- Update links to your real destinations -->
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="resume.pdf" target="_blank" rel="noopener">View Resume</a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main id="main-content">
+      <section class="section" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <!-- Replace with your personal bio -->
         <p>
-          Product-focused software engineer with experience building accessible web
-          experiences, creating maintainable front-end systems, and collaborating
-          across teams to deliver user-facing features.
+          I'm a developer focused on creating intuitive interfaces and maintainable front-end systems. I enjoy
+          collaborating across teams to solve problems and deliver polished experiences.
         </p>
       </section>
 
-      <section>
-        <h2>Experience</h2>
-        <ul>
-          <li>
-            <strong>Software Engineer</strong> — Built and maintained responsive web
-            applications, improved performance, and delivered new feature releases.
-          </li>
-          <li>
-            <strong>Technical Collaborator</strong> — Partnered with design and
-            product teams to translate requirements into polished solutions.
-          </li>
-        </ul>
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <h3>Frontend</h3>
+            <ul class="chip-list" aria-label="Frontend skills">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Frameworks & Tools</h3>
+            <ul class="chip-list" aria-label="Framework and tooling skills">
+              <li>React</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Figma</li>
+            </ul>
+          </article>
+          <article class="skill-card">
+            <h3>Practices</h3>
+            <ul class="chip-list" aria-label="Engineering practice skills">
+              <li>Accessibility</li>
+              <li>Responsive Design</li>
+              <li>Performance</li>
+              <li>Testing</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
-      <section>
-        <h2>Skillset</h2>
-        <ul class="skills">
-          <li>HTML5 &amp; Semantic Markup</li>
-          <li>CSS3 &amp; Responsive Design</li>
-          <li>JavaScript / TypeScript</li>
-          <li>React &amp; Component-Based UI</li>
-          <li>Git &amp; GitHub Workflows</li>
-          <li>Testing &amp; Debugging</li>
-        </ul>
+      <section class="section" id="resume" aria-labelledby="resume-title">
+        <h2 id="resume-title">Resume</h2>
+        <p>Download or view my resume as a PDF.</p>
+        <!-- Replace resume.pdf with your uploaded resume file name -->
+        <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
       </section>
 
-      <section>
-        <h2>Education</h2>
-        <p>Bachelor's Degree in Computer Science</p>
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <h2 id="projects-title">Project Highlights</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Project One</h3>
+            <p>Short summary of what this project solves, your role, and key outcomes.</p>
+            <!-- Replace with your real project URL -->
+            <a href="https://github.com/yourusername/project-one" target="_blank" rel="noopener">View Project</a>
+          </article>
+          <article class="project-card">
+            <h3>Project Two</h3>
+            <p>Short summary of what this project solves, your role, and key technologies.</p>
+            <!-- Replace with your real project URL -->
+            <a href="https://github.com/yourusername/project-two" target="_blank" rel="noopener">View Project</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contact</h2>
+        <p>
+          <!-- Replace with your preferred contact email -->
+          Email: <a href="mailto:your.email@example.com">your.email@example.com</a>
+        </p>
+        <ul class="social-links" aria-label="Social links">
+          <!-- Replace social links with your profiles -->
+          <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://twitter.com/yourusername" target="_blank" rel="noopener">Twitter/X</a></li>
+        </ul>
       </section>
     </main>
   </body>
