@@ -5,125 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio website for Your Name - role, projects, skills, and contact information."
+      content="Portfolio and resume website for Felicia Pedwards featuring experience, selected work, skills, and contact information."
     />
-    <title>Your Name | Portfolio</title>
+    <title>Felicia Pedwards | Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header class="site-header" id="top">
-      <nav class="nav" aria-label="Primary navigation">
-        <!-- Customize name/logo text -->
-        <a class="brand" href="#top">Your Name</a>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="page-shell">
+      <header class="site-header" id="top">
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="brand" href="#top">FP</a>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
 
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-content">
-          <!-- Replace with your name and role/tagline -->
-          <p class="eyebrow">Available for opportunities</p>
-          <h1 id="hero-title">Your Name</h1>
-          <p class="tagline">Frontend Developer crafting accessible, modern web experiences.</p>
-          <p class="hero-text">
-            I design and build clean digital products with performance, usability, and thoughtful detail.
-          </p>
-          <div class="cta-group">
-            <!-- Update links to your real destinations -->
-            <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-secondary" href="resume.pdf" target="_blank" rel="noopener">View Resume</a>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow">Resume • Portfolio • GitHub Pages</p>
+            <h1 id="hero-title">Felicia Pedwards</h1>
+            <p class="tagline">Frontend developer building polished, accessible web experiences.</p>
+            <p class="hero-text">
+              I create thoughtful digital products with strong visual systems, clean implementation, and a focus on
+              performance, usability, and maintainability.
+            </p>
+            <div class="cta-group">
+              <a class="btn btn-primary" href="#projects">Explore Projects</a>
+              <a class="btn btn-secondary" href="#contact">Get in Touch</a>
+            </div>
           </div>
-        </div>
-      </section>
-    </header>
 
-    <main id="main-content">
-      <section class="section" id="about" aria-labelledby="about-title">
-        <h2 id="about-title">About</h2>
-        <!-- Replace with your personal bio -->
-        <p>
-          I'm a developer focused on creating intuitive interfaces and maintainable front-end systems. I enjoy
-          collaborating across teams to solve problems and deliver polished experiences.
-        </p>
-      </section>
-
-      <section class="section" id="skills" aria-labelledby="skills-title">
-        <h2 id="skills-title">Skills</h2>
-        <div class="skills-grid">
-          <article class="skill-card">
-            <h3>Frontend</h3>
-            <ul class="chip-list" aria-label="Frontend skills">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
+          <aside class="hero-panel" aria-label="Professional summary">
+            <p class="panel-label">At a glance</p>
+            <ul class="highlight-list">
+              <li>Frontend engineering</li>
+              <li>Responsive design systems</li>
+              <li>Accessibility-first implementation</li>
+              <li>Modern HTML, CSS, and JavaScript</li>
             </ul>
-          </article>
-          <article class="skill-card">
-            <h3>Frameworks & Tools</h3>
-            <ul class="chip-list" aria-label="Framework and tooling skills">
-              <li>React</li>
-              <li>Git</li>
-              <li>GitHub</li>
-              <li>Figma</li>
+          </aside>
+        </section>
+      </header>
+
+      <main id="main-content">
+        <section class="section section-grid" id="about" aria-labelledby="about-title">
+          <div>
+            <p class="section-kicker">About</p>
+            <h2 id="about-title">Design-minded development with a practical engineering approach.</h2>
+          </div>
+          <div class="section-copy">
+            <p>
+              I enjoy turning ideas into elegant, production-ready interfaces. My work centers on creating websites and
+              product experiences that feel premium, perform well, and remain easy to maintain over time.
+            </p>
+            <p>
+              This site is a lightweight resume-style portfolio that highlights experience, capabilities, and selected
+              work in a clean format suitable for GitHub Pages hosting.
+            </p>
+          </div>
+        </section>
+
+        <section class="section" id="experience" aria-labelledby="experience-title">
+          <div class="section-heading">
+            <p class="section-kicker">Experience</p>
+            <h2 id="experience-title">Selected experience and focus areas</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="timeline-date">Recent</p>
+                <span class="timeline-dot" aria-hidden="true"></span>
+              </div>
+              <div class="timeline-card">
+                <h3>Frontend Developer</h3>
+                <p class="timeline-role">Modern web interfaces</p>
+                <p>
+                  Build responsive, user-friendly experiences with semantic markup, scalable CSS, and maintainable UI
+                  patterns that support long-term product growth.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-meta">
+                <p class="timeline-date">Core strengths</p>
+                <span class="timeline-dot" aria-hidden="true"></span>
+              </div>
+              <div class="timeline-card">
+                <h3>UI Engineering</h3>
+                <p class="timeline-role">Accessibility, performance, and consistency</p>
+                <p>
+                  Create cohesive interfaces with attention to spacing, hierarchy, motion, contrast, and mobile-first
+                  behavior.
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="skills" aria-labelledby="skills-title">
+          <div class="section-heading">
+            <p class="section-kicker">Capabilities</p>
+            <h2 id="skills-title">Skills and toolset</h2>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Frontend</h3>
+              <ul class="chip-list" aria-label="Frontend skills">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive UI</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Workflow</h3>
+              <ul class="chip-list" aria-label="Workflow skills">
+                <li>GitHub</li>
+                <li>Git</li>
+                <li>Content design</li>
+                <li>Static sites</li>
+              </ul>
+            </article>
+            <article class="skill-card">
+              <h3>Quality</h3>
+              <ul class="chip-list" aria-label="Quality skills">
+                <li>Accessibility</li>
+                <li>Performance</li>
+                <li>Usability</li>
+                <li>Maintainability</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="projects" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <p class="section-kicker">Projects</p>
+            <h2 id="projects-title">Selected work</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card featured-project">
+              <p class="project-label">Featured</p>
+              <h3>Personal portfolio refresh</h3>
+              <p>
+                A refined personal website experience with clearer hierarchy, stronger visual polish, and a resume-first
+                content structure.
+              </p>
+              <a href="https://github.com/feliciapedwards" target="_blank" rel="noopener">View GitHub</a>
+            </article>
+            <article class="project-card">
+              <p class="project-label">Focus</p>
+              <h3>Static website implementation</h3>
+              <p>
+                Lightweight, fast-loading pages built for GitHub Pages deployment without unnecessary framework
+                overhead.
+              </p>
+            </article>
+            <article class="project-card">
+              <p class="project-label">Approach</p>
+              <h3>Accessible interface design</h3>
+              <p>
+                Visual systems and interaction patterns that keep content readable, navigable, and usable across screen
+                sizes.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title">Let’s build something thoughtful.</h2>
+          </div>
+          <div class="contact-grid">
+            <p>
+              Use this space to add your preferred email address, LinkedIn, portfolio links, and downloadable resume
+              PDF when ready.
+            </p>
+            <ul class="social-links" aria-label="Social links">
+              <li><a href="https://github.com/feliciapedwards" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="mailto:hello@example.com">Email</a></li>
             </ul>
-          </article>
-          <article class="skill-card">
-            <h3>Practices</h3>
-            <ul class="chip-list" aria-label="Engineering practice skills">
-              <li>Accessibility</li>
-              <li>Responsive Design</li>
-              <li>Performance</li>
-              <li>Testing</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="resume" aria-labelledby="resume-title">
-        <h2 id="resume-title">Resume</h2>
-        <p>Download or view my resume as a PDF.</p>
-        <!-- Replace resume.pdf with your uploaded resume file name -->
-        <a class="btn btn-primary" href="resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
-      </section>
-
-      <section class="section" id="projects" aria-labelledby="projects-title">
-        <h2 id="projects-title">Project Highlights</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <h3>Project One</h3>
-            <p>Short summary of what this project solves, your role, and key outcomes.</p>
-            <!-- Replace with your real project URL -->
-            <a href="https://github.com/yourusername/project-one" target="_blank" rel="noopener">View Project</a>
-          </article>
-          <article class="project-card">
-            <h3>Project Two</h3>
-            <p>Short summary of what this project solves, your role, and key technologies.</p>
-            <!-- Replace with your real project URL -->
-            <a href="https://github.com/yourusername/project-two" target="_blank" rel="noopener">View Project</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Contact</h2>
-        <p>
-          <!-- Replace with your preferred contact email -->
-          Email: <a href="mailto:your.email@example.com">your.email@example.com</a>
-        </p>
-        <ul class="social-links" aria-label="Social links">
-          <!-- Replace social links with your profiles -->
-          <li><a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://twitter.com/yourusername" target="_blank" rel="noopener">Twitter/X</a></li>
-        </ul>
-      </section>
-    </main>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
