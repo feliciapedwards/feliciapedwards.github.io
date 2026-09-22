@@ -475,10 +475,15 @@ main {
   color: var(--text);
 }
 
-@media (max-width: 760px) {
+@media (max-width: 920px) {
   .hero,
   .section-grid,
-  .contact-section,
+  .contact-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
   .timeline-item {
     grid-template-columns: 1fr;
   }
