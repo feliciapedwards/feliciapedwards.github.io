@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Resume website for Felicia Edwards featuring business intelligence experience, technical skills, and contact information."
+      content="Portfolio website for Felicia Edwards featuring business intelligence experience, technical skills, featured projects, education, and contact information."
     />
     <title>Felicia Edwards | Business Intelligence Analyst</title>
     <link rel="stylesheet" href="styles.css" />
@@ -16,7 +16,7 @@
     <div class="page-shell">
       <header class="site-header" id="top">
         <nav class="nav" aria-label="Primary navigation">
-          <a class="brand" href="#top">FP</a>
+          <a class="brand" href="#top" aria-label="Felicia Edwards home">FE</a>
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -29,46 +29,79 @@
 
         <section class="hero" aria-labelledby="hero-title">
           <div class="hero-copy">
-            <p class="eyebrow">Resume • Business Intelligence • Data Analytics</p>
+            <p class="eyebrow">Portfolio • Business Intelligence • Data Analytics</p>
+            <div class="status-pill" aria-label="Availability status">
+              <span class="status-dot" aria-hidden="true"></span>
+              Available for business intelligence and analytics opportunities
+            </div>
             <h1 id="hero-title">Felicia Edwards</h1>
-            <p class="tagline">Senior business intelligence analyst building clean, reliable reporting systems.</p>
+            <p class="hero-role">Senior Business Intelligence Analyst</p>
             <p class="hero-text">
-              Data professional with 6+ years of experience turning complex, fragmented datasets into clean,
-              reliable reporting systems using SQL, Python, and Power BI.
+              Building clean, trustworthy reporting systems that turn fragmented data into clear decisions using SQL,
+              Python, and Power BI.
             </p>
             <div class="cta-group">
               <a class="btn btn-primary" href="#experience">View Experience</a>
-              <a class="btn btn-secondary" href="#contact">Contact Me</a>
+              <a class="btn btn-secondary" href="#projects">See Projects</a>
+              <a class="btn btn-tertiary" href="#contact">Connect</a>
             </div>
           </div>
 
-          <aside class="hero-panel" aria-label="Professional summary">
-            <p class="panel-label">At a glance</p>
-            <ul class="highlight-list">
-              <li>6+ years in analytics and reporting</li>
-              <li>SQL, Python, Power BI, and Databricks</li>
-              <li>ETL, data validation, and automation</li>
-              <li>Structured problem-solving with precision</li>
-            </ul>
+          <aside class="hero-panel" aria-labelledby="hero-panel-title">
+            <div class="hero-panel-header">
+              <p class="panel-label" id="hero-panel-title">Professional snapshot</p>
+              <p class="hero-panel-copy">
+                Data professional with 6+ years of experience delivering reporting, validation, automation, and
+                analytics systems across business intelligence and operations roles.
+              </p>
+            </div>
+            <div class="hero-stats" aria-label="Key highlights">
+              <article class="stat-card">
+                <p class="stat-value">6+</p>
+                <p class="stat-label">Years in analytics and reporting</p>
+              </article>
+              <article class="stat-card">
+                <p class="stat-value">SQL · Python · Power BI</p>
+                <p class="stat-label">Core tools for modeling, validation, and dashboards</p>
+              </article>
+              <article class="stat-card">
+                <p class="stat-value">ETL · Data Quality · Automation</p>
+                <p class="stat-label">Primary focus areas across recent roles</p>
+              </article>
+            </div>
           </aside>
         </section>
       </header>
 
       <main id="main-content">
         <section class="section section-grid" id="about" aria-labelledby="about-title">
-          <div>
+          <div class="section-heading sticky-heading">
             <p class="section-kicker">About</p>
-            <h2 id="about-title">Analytical reporting systems built for precision, consistency, and scale.</h2>
+            <h2 id="about-title">Analytical systems designed for precision, consistency, and scale.</h2>
           </div>
-          <div class="section-copy">
-            <p>
-              I specialize in transforming fragmented data into standardized, trustworthy reporting systems that help
-              teams make better decisions with less manual effort.
-            </p>
-            <p>
-              My background spans business intelligence, data quality, dashboard development, and workflow
-              automation, with experience supporting stakeholders through scalable analytical infrastructure.
-            </p>
+          <div class="about-stack">
+            <div class="section-copy">
+              <p>
+                I specialize in transforming fragmented data into standardized, trustworthy reporting systems that help
+                teams make better decisions with less manual effort.
+              </p>
+              <p>
+                My background spans business intelligence, data quality, dashboard development, workflow automation,
+                and stakeholder support through scalable analytical infrastructure.
+              </p>
+            </div>
+            <div class="highlight-grid" aria-label="Professional highlights">
+              <article class="highlight-card">
+                <p class="project-label">Primary focus</p>
+                <h3>Reporting systems that stay reliable</h3>
+                <p>From data validation to backend models, I build cleaner foundations for repeatable analysis.</p>
+              </article>
+              <article class="highlight-card">
+                <p class="project-label">Working style</p>
+                <h3>Structured problem-solving</h3>
+                <p>Clear diagnostics, careful validation, and scalable workflows are at the center of my approach.</p>
+              </article>
+            </div>
           </div>
         </section>
 
@@ -274,26 +307,30 @@
 
           <div class="projects-grid">
             <article class="project-card featured-project">
-              <p class="project-label">Featured project</p>
+              <div class="project-topline">
+                <p class="project-label">Featured project</p>
+                <a
+                  href="https://github.com/feliciapedwards/info_env_jordan"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="View info_env_jordan repository (opens in a new tab)"
+                >
+                  View info_env_jordan repository <span class="external-icon" aria-hidden="true">↗</span>
+                </a>
+              </div>
               <h3>Jordan Information Environment Analysis</h3>
               <p>
                 Analyzes how economic stress, public unrest, and media attention are evolving in Jordan to surface
                 patterns that can help decision-makers assess shifts in the information environment.
               </p>
-              <ul class="chip-list" aria-label="Technologies used in Jordan Information Environment Analysis">
+              <p>
+                Analytical project combining multiple data sources into a medallion-style workflow for exploration,
+                transformation, and reporting.
+              </p>
+              <ul class="chip-list" aria-label="Project technologies">
                 <li>Python</li>
                 <li>Jupyter Notebook</li>
               </ul>
-              <div class="cta-group">
-                <a
-                  class="btn btn-secondary"
-                  href="https://github.com/feliciapedwards/info_env_jordan"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View the Jordan Information Environment Analysis repository on GitHub"
-                  >View the info_env_jordan repository on GitHub</a
-                >
-              </div>
             </article>
           </div>
         </section>
@@ -304,7 +341,7 @@
             <h2 id="education-title">Academic background</h2>
           </div>
 
-          <article class="project-card featured-project">
+          <article class="project-card education-card">
             <p class="project-label">Degree</p>
             <h3>Bachelor of Arts, Mathematics</h3>
             <p>University of Washington | Seattle, WA</p>
@@ -312,7 +349,7 @@
         </section>
 
         <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-          <div>
+          <div class="section-heading">
             <p class="section-kicker">Contact</p>
             <h2 id="contact-title">Let’s connect.</h2>
           </div>
@@ -320,11 +357,29 @@
             <p>
               Reach out for business intelligence, analytics, reporting, and data infrastructure opportunities.
             </p>
-            <ul class="social-links" aria-label="Social links">
-              <li><a href="tel:+12024317357">+1 (202) 431-7357</a></li>
-              <li><a href="mailto:feliciapedwards@gmail.com">feliciapedwards@gmail.com</a></li>
-              <li><a href="https://github.com/feliciapedwards" target="_blank" rel="noopener">GitHub</a></li>
-              <li><a href="https://www.linkedin.com/in/feliciapedwards" target="_blank" rel="noopener">LinkedIn</a></li>
+            <ul class="social-links" aria-label="Contact links">
+              <li><a href="tel:+12024317357">Call +1 (202) 431-7357</a></li>
+              <li><a href="mailto:feliciapedwards@gmail.com">Email feliciapedwards@gmail.com</a></li>
+              <li>
+                <a
+                  href="https://github.com/feliciapedwards"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="Visit GitHub profile (opens in a new tab)"
+                >
+                  Visit GitHub profile <span class="external-icon" aria-hidden="true">↗</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/feliciapedwards"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  aria-label="View LinkedIn profile (opens in a new tab)"
+                >
+                  View LinkedIn profile <span class="external-icon" aria-hidden="true">↗</span>
+                </a>
+              </li>
             </ul>
           </div>
         </section>
