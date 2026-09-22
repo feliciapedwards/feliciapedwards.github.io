@@ -70,10 +70,11 @@ button:focus-visible {
   border-radius: 0.75rem;
 }
 
-.link-note {
+.external-icon {
+  display: inline-block;
+  margin-left: 0.25rem;
   color: var(--subtle);
-  font-size: 0.88em;
-  font-weight: 500;
+  font-size: 0.95em;
 }
 
 .page-shell {
